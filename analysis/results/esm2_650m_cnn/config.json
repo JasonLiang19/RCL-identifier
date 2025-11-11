@@ -1,0 +1,111 @@
+{
+  "encoding": {
+    "onehot": {
+      "dim": 21
+    },
+    "blosum": {
+      "dim": 20
+    },
+    "esm2": {
+      "model_name": "facebook/esm2_t33_650M_UR50D",
+      "dim": 1280,
+      "batch_size": 4
+    },
+    "esm2_650m": {
+      "dim": 1280,
+      "batch_size": 1
+    }
+  },
+  "model": "cnn",
+  "epochs": 50,
+  "precomputed": "data/embeddings/esm2_650m_embeddings.npz",
+  "data": {
+    "max_length": 1024,
+    "train_split": 0.8,
+    "val_split": 0.1,
+    "test_split": 0.1,
+    "random_seed": 42,
+    "train_serpin": "data/raw/Alphafold_RCL_annotations.csv",
+    "train_non_serpin": "data/raw/non_serpin_train.csv",
+    "test_serpin": "data/raw/Uniprot_Test_Set.csv",
+    "test_non_serpin": "data/raw/non_serpin_test.csv",
+    "fasta_annotations": "data/raw/RCL_annotations.fasta"
+  },
+  "models": {
+    "cnn": {
+      "channels": [
+        256,
+        128,
+        64,
+        32
+      ],
+      "kernel_sizes": [
+        7,
+        5,
+        5,
+        3
+      ],
+      "dropout": 0.3
+    },
+    "unet": {
+      "base_filters": 32,
+      "depth": 4,
+      "dropout": 0.25,
+      "attention": true
+    },
+    "graph": {
+      "hidden_dim": 128,
+      "num_layers": 3,
+      "dropout": 0.3,
+      "k_neighbors": 5
+    }
+  },
+  "training": {
+    "batch_size": 8,
+    "epochs": 50,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 5,
+    "loss_weights": [
+      1.0,
+      5.0
+    ],
+    "optimizer": "adam",
+    "scheduler": "reduce_on_plateau",
+    "save_top_k": 3,
+    "monitor": "val_f1",
+    "mode": "max"
+  },
+  "evaluation": {
+    "metrics": [
+      "accuracy",
+      "precision",
+      "recall",
+      "f1",
+      "mcc",
+      "auc"
+    ],
+    "threshold": 0.5
+  },
+  "hardware": {
+    "device": "cuda",
+    "num_workers": 4,
+    "pin_memory": true,
+    "mixed_precision": false,
+    "use_multi_gpu": true,
+    "gpu_ids": [
+      0,
+      1
+    ]
+  },
+  "logging": {
+    "use_tensorboard": true,
+    "log_interval": 10,
+    "save_predictions": true
+  },
+  "output": {
+    "runs_dir": "runs",
+    "models_dir": "models",
+    "predictions_dir": "predictions"
+  }
+}

@@ -1,0 +1,39 @@
+================================================================================
+Alphafold RCL Annotations - Data Filtering Summary
+================================================================================
+Date: November 10, 2025
+
+ORIGINAL FILE:
+- File: old_RCL_annotation_file.csv (backup)
+- Total rows: 1,962
+
+FILTERED OUT: 578 rows with invalid/missing RCL annotations
+- Invalid values: 'no result', 'no start', 'no end', '#value!', 'nan'
+- Non-numeric annotations
+- Out-of-range coordinates (start >= end, or beyond sequence length)
+
+CLEANED FILE:
+- File: Alphafold_RCL_annotations.csv (current)
+- Valid rows: 1,384
+- All rows have valid integer RCL annotations within sequence bounds
+
+TRAINING DATASET:
+- Sequences loaded: 1,383
+- Filtered by length: 1 sequence (longer than 1,024 residues)
+  * Sequence ID: A0A3P9LLE7 (1,189 residues)
+
+FINAL TRAINING DATA:
+- Serpin sequences: 1,383 (with valid RCL annotations)
+- Non-serpin sequences: 2,048 (negative examples, all non-RCL)
+- Total: 3,431 sequences
+
+BENEFITS:
+✅ No more training errors due to invalid annotations
+✅ Cleaner dataset for reproducible experiments
+✅ Original data preserved in backup file
+✅ All subsequent training runs will use validated data
+
+FILES:
+- Backup: data/raw/old_RCL_annotation_file.csv (1,962 rows - original)
+- Current: data/raw/Alphafold_RCL_annotations.csv (1,384 rows - cleaned)
+================================================================================

@@ -1,0 +1,628 @@
+Validation Report for: data/raw/Alphafold_RCL_annotations.csv
+================================================================================
+
+ERRORS:
+Row   207 | Field: Sequence        | Invalid amino acids | Value: X
+Row   308 | Field: rcl_start       | Start index beyond sequence length | Value: start=353, seq_len=246
+Row   308 | Field: rcl_end         | End index beyond sequence length | Value: end=375, seq_len=246
+Row   549 | Field: Sequence        | Invalid amino acids | Value: X
+Row   549 | Field: rcl_start/end   | Non-numeric RCL indices | Value: start=no results found, end=433
+Row   554 | Field: rcl_start/end   | Non-numeric RCL indices | Value: start=didnt know where start is, end=228
+Row   605 | Field: rcl_start/end   | Non-numeric RCL indices | Value: start=361, end=didnt know where end was
+Row   664 | Field: Sequence        | Invalid amino acids | Value: X
+Row   665 | Field: Sequence        | Invalid amino acids | Value: X
+Row   983 | Field: Sequence        | Invalid amino acids | Value: X
+Row   990 | Field: Sequence        | Invalid amino acids | Value: X
+Row  1001 | Field: Sequence        | Invalid amino acids | Value: X
+Row  1027 | Field: Sequence        | Invalid amino acids | Value: X
+Row  1074 | Field: rcl_start/end   | Non-numeric RCL indices | Value: start=didnt know where start is, end=315
+Row  1161 | Field: Sequence        | Invalid amino acids | Value: X
+Row  1380 | Field: rcl_start/end   | Non-numeric RCL indices | Value: start=205, end=didnt know where end is
+Row  1586 | Field: Sequence        | Invalid amino acids | Value: X
+Row  1807 | Field: rcl_start/end   | Non-numeric RCL indices | Value: start=didnt know where start is, end=160
+Row  1847 | Field: Sequence        | Invalid amino acids | Value: X
+
+WARNINGS:
+Row     4 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row     9 | Field: Sequence        | Sequence too long (>1024) | Value: 1354
+Row     9 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    10 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    11 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    18 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    20 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    22 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    23 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    24 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    26 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    27 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    37 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    38 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    39 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row    40 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   102 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   119 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=384
+Row   132 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=567
+Row   150 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=567
+Row   177 | Field: Sequence        | Sequence too long (>1024) | Value: 1543
+Row   177 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   180 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   184 | Field: Sequence        | Sequence too long (>1024) | Value: 1439
+Row   184 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   185 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   186 | Field: Sequence        | Sequence too long (>1024) | Value: 1406
+Row   186 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   187 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   188 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   189 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   190 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   191 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   192 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   193 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   194 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   195 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   196 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   197 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   198 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   199 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   200 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   201 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   202 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   203 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   204 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   205 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   206 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   207 | Field: Sequence        | Sequence too long (>1024) | Value: 3973
+Row   207 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   208 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   213 | Field: rcl_length      | RCL very long (52 residues) | Value: start=431, end=482
+Row   220 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   241 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=391, end=nan
+Row   252 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   263 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=433
+Row   265 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   266 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   269 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=342, end=no end
+Row   270 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   272 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=420, end=no end
+Row   274 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   276 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=361, end=no end
+Row   277 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   278 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   279 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   280 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   281 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   282 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   285 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   287 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   288 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   291 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=374, end=no end
+Row   303 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   304 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   307 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   310 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   311 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   312 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   313 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   314 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   315 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   316 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   317 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   318 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   319 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   320 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   321 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   322 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   323 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   324 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   325 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   326 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   327 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   328 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   329 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   330 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   337 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=420
+Row   348 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   358 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   359 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   370 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   372 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   373 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   374 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   375 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   376 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   377 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   378 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   379 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   380 | Field: Sequence        | Sequence too long (>1024) | Value: 1621
+Row   380 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   381 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   382 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   383 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   384 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   385 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   386 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   387 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   388 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   389 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   390 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   391 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   392 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   393 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   394 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   395 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   396 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   397 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   398 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   399 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   400 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   401 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   402 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   403 | Field: Sequence        | Sequence too long (>1024) | Value: 1612
+Row   403 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   404 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   405 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   406 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   407 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   408 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   409 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   410 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   411 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   412 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   413 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   414 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   415 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   416 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   417 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   418 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   419 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   420 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   421 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   422 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   423 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   424 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   425 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   426 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   427 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   428 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   429 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   430 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   431 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   432 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   433 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   434 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   435 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   436 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   437 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   438 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   439 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   442 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   443 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   444 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   445 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   446 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   447 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   448 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   449 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   450 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   451 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   452 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   453 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   454 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   455 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   456 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   457 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   458 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   459 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   460 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   461 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   462 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   463 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   464 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   465 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   466 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   467 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   468 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   469 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   470 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   471 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   472 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   473 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   474 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   475 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   476 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   477 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   478 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   479 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   480 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   481 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   482 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   483 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   484 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   485 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   486 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   487 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   488 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   489 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   490 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   491 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   492 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   493 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   494 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   495 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   496 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   497 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   498 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   499 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   500 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   501 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   502 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   503 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   504 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   505 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   506 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   507 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   508 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   509 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   510 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   511 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   512 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   513 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   514 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   515 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   516 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   517 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   518 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   519 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   520 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   521 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   522 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   523 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   524 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   525 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   526 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   527 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   528 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   529 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   530 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   531 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   532 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   533 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   534 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   535 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   536 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   537 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   538 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   539 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   540 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   541 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   542 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   543 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   544 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   545 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   546 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   547 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   548 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   563 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   566 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no end, end=nan
+Row   568 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   569 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   570 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   571 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   587 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   588 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   589 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   590 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   591 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   592 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   593 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   594 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   595 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   596 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   618 | Field: Sequence        | Sequence too long (>1024) | Value: 2140
+Row   618 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   648 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   663 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no alphafold entry, end=nan
+Row   664 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no alphafold entry, end=nan
+Row   665 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no alphafold entry, end=nan
+Row   666 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=seems too short, but there might be one, end=nan
+Row   669 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   682 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   694 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=527
+Row   695 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   698 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   703 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   706 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=350, end=no end
+Row   707 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=345
+Row   708 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=348, end=no end
+Row   711 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=400, end=no end
+Row   713 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   730 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=373
+Row   732 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=too short, end=nan
+Row   733 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   734 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   735 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   736 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   737 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   738 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   739 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   740 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   741 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   742 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   743 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   744 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   745 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   752 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   753 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   754 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   755 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   756 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   757 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   758 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   759 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   760 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   761 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   762 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   763 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   764 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   765 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   766 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   767 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   768 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   769 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   770 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   771 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   772 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   773 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   774 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   775 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   776 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   777 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   778 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   779 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   780 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   781 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   782 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   783 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   784 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   785 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   786 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   787 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   788 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   789 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   790 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   791 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   792 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   793 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   797 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=458
+Row   798 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no restults found, end=nan
+Row   815 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=352
+Row   821 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   830 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   832 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   849 | Field: rcl_length      | RCL very long (68 residues) | Value: start=379, end=446
+Row   862 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   868 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   874 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=206, end=nan
+Row   878 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   882 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   883 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   884 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row   910 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=205, end=no end
+Row   933 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row   982 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=380
+Row   983 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row   988 | Field: rcl_length      | RCL very long (59 residues) | Value: start=322, end=380
+Row   990 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1001 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1025 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1027 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1029 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1161 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no alphafold entry, end=nan
+Row  1164 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=too short, end=nan
+Row  1194 | Field: Sequence        | Sequence too long (>1024) | Value: 1406
+Row  1194 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1206 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=395, end=no end
+Row  1209 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1212 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1232 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1235 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=336, end=no end
+Row  1256 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1261 | Field: Sequence        | Sequence too long (>1024) | Value: 1189
+Row  1265 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1271 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=334, end=no end
+Row  1279 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1283 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1285 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=360, end=nan
+Row  1286 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=458
+Row  1287 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=361, end=nan
+Row  1290 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=458
+Row  1310 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=169
+Row  1356 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1368 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=192, end=no end
+Row  1372 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1376 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=162, end=nan
+Row  1378 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1379 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1386 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1394 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1403 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=206, end=nan
+Row  1408 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1409 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1414 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=359, end=no end
+Row  1418 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1423 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1429 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1436 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1450 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1451 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1452 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1453 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1455 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1456 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1457 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1464 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1465 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1468 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1475 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1476 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1477 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1478 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1479 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1480 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1481 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1482 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1483 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1484 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1485 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1486 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1487 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1488 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1489 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1490 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1491 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1492 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1493 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1494 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1495 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1499 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1500 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1506 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1507 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1509 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1513 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1514 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=326, end=no end
+Row  1518 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1519 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1520 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1521 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1522 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1523 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1524 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1525 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1526 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1527 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1528 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1529 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1530 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1531 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1532 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1533 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1534 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1535 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1536 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1537 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1538 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1539 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1540 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1541 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1542 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1543 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1544 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1545 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1546 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1547 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1548 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1549 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1550 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1551 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1552 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1553 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1554 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1555 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1556 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1557 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1558 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1559 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1560 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1561 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1562 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1563 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1574 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1586 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1592 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=358, end=no end
+Row  1608 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=142, end=no end
+Row  1616 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=329, end=no end
+Row  1617 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1635 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1637 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=169, end=no end
+Row  1646 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=213, end=no end
+Row  1654 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1664 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1666 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1670 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=268, end=nan
+Row  1693 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=135, end=no end
+Row  1694 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1719 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=369, end=no end
+Row  1725 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1726 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1817 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=357, end=no end
+Row  1847 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1854 | Field: Sequence        | Sequence too long (>1024) | Value: 1287
+Row  1854 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no result, end=nan
+Row  1873 | Field: Sequence        | Sequence too long (>1024) | Value: 1177
+Row  1873 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=nan, end=nan
+Row  1886 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1887 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1888 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1889 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1890 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1891 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1892 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1893 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1894 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1895 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1896 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1897 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1898 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1899 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1900 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1901 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1902 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1903 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1904 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1905 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1906 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1907 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1908 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1930 | Field: Sequence        | Sequence too long (>1024) | Value: 1160
+Row  1930 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1931 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1932 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1933 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1934 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1935 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1936 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1937 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1938 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1939 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1940 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1941 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1942 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1943 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1944 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1945 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1946 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1947 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1948 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1949 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1950 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1951 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1952 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1953 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no results found, end=nan
+Row  1959 | Field: rcl_start/end   | Missing or invalid RCL annotation | Value: start=no end, end=nan
+
+STATISTICS:
+  missing_annotation: 571
+  too_long: 13
+  invalid_amino_acids: 11
+  long_rcl: 3
+  start_beyond_sequence: 1
+  end_beyond_sequence: 1
+  non_numeric_indices: 6
+  missing_id: 0
+  missing_sequence: 0
+  empty_sequence: 0
+  invalid_start_index: 0
+  end_before_start: 0
+  mismatched_rcl_seq: 0
+  short_rcl: 0

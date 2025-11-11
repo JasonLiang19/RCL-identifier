@@ -1,0 +1,26 @@
+Validation Report for: data/raw/non_serpin_train.csv
+================================================================================
+
+ERRORS:
+Row   805 | Field: Sequence        | Invalid amino acids | Value: U
+Row  1384 | Field: Sequence        | Invalid amino acids | Value: X
+Row  1421 | Field: Sequence        | Invalid amino acids | Value: X
+Row  1812 | Field: Sequence        | Invalid amino acids | Value: X
+
+WARNINGS:
+
+STATISTICS:
+  invalid_amino_acids: 4
+  missing_id: 0
+  missing_sequence: 0
+  empty_sequence: 0
+  too_long: 0
+  missing_annotation: 0
+  non_numeric_indices: 0
+  invalid_start_index: 0
+  end_before_start: 0
+  start_beyond_sequence: 0
+  end_beyond_sequence: 0
+  mismatched_rcl_seq: 0
+  short_rcl: 0
+  long_rcl: 0
