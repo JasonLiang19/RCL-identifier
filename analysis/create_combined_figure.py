@@ -16,18 +16,18 @@ FIGURES_DIR = RESULTS_DIR / "figures"    # output folder
 FIGURES_DIR.mkdir(exist_ok=True)
 
 CSV_FILES = {
-    "Test – Residue Level (F1)": "test_residue_level_evaluation.csv",
-    "Test – Sequence Level (Exact Match %)": "test_sequence_level_evaluation.csv",
-    "Val – Residue Level (F1)": "val_residue_level_evaluation.csv",
-    "Val – Sequence Level (Exact Match %)": "val_sequence_level_evaluation.csv",
+    "Test Set – Residue Level (F1)": "test_residue_level_evaluation.csv",
+    "Test Set – Sequence Level (Exact Match %)": "test_sequence_level_evaluation.csv",
+    #"Val – Residue Level (F1)": "val_residue_level_evaluation.csv",
+    #"Val – Sequence Level (Exact Match %)": "val_sequence_level_evaluation.csv",
 }
 
 # Metric to plot for each file
 METRIC = {
-    "Test – Residue Level (F1)": "f1",
-    "Test – Sequence Level (Exact Match %)": "exact_match_pct",
-    "Val – Residue Level (F1)": "f1",
-    "Val – Sequence Level (Exact Match %)": "exact_match_pct",
+    "Test Set – Residue Level (F1)": "f1",
+    "Test Set – Sequence Level (Exact Match %)": "exact_match_pct",
+    #"Val – Residue Level (F1)": "f1",
+    #"Val – Sequence Level (Exact Match %)": "exact_match_pct",
 }
 
 # Human-readable y-labels
@@ -67,17 +67,17 @@ def add_subplot(ax, pivot, title, ylabel):
         linewidth=0.8,
     )
 
-    ax.set_title(title, fontsize=14)
-    ax.set_xlabel("Encoding", fontsize=12)
-    ax.set_ylabel(ylabel, fontsize=12)
-    ax.tick_params(labelsize=10)
+    ax.set_title(title, fontsize=18)
+    ax.set_xlabel("Encoding", fontsize=16)
+    ax.set_ylabel(ylabel, fontsize=16)
+    ax.tick_params(labelsize=14)
     ax.set_xticklabels(ax.get_xticklabels(), rotation=0)
 
 # -----------------------------
 #  CREATE 2×2 FIGURE
 # -----------------------------
 def main():
-    fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+    fig, axes = plt.subplots(1, 2, figsize=(14, 7))
     axes = axes.flatten()
 
     handles, labels = None, None  # capture legend once
@@ -103,15 +103,15 @@ def main():
         handles,
         labels,
         title="Architecture",
-        loc="upper center",
+        loc="lower center",
         ncol=3,
         fontsize=12,
         title_fontsize=12,
         frameon=False,
-        bbox_to_anchor=(0.5, 1.03)
+        bbox_to_anchor=(0.5, 0)   # BELOW the figure
     )
 
-    fig.tight_layout(rect=[0, 0, 1, 0.97])
+    fig.tight_layout(rect=[0, 0.10, 1, 1])
     outfile = FIGURES_DIR / "all_results_combined.png"
     plt.savefig(outfile, dpi=300)
     plt.close()
