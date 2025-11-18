@@ -1,15 +1,18 @@
 ================================================================================
 TEST SET EVALUATION RESULTS
 Evaluation Mode: Sequence-level
-Threshold: 0.5, Min Consecutive: 12
+Threshold: 0.5, Min Consecutive: 1
 ================================================================================
 
  Encoding Model Accuracy Precision Recall     F1 Mean IoU Exact Match %
-   onehot   CNN   0.8205    1.0000 0.8205 0.9014   0.6522       46.1538
-   onehot  UNET   1.0000    1.0000 1.0000 1.0000   0.9943       97.4359
-   blosum   CNN   0.8590    1.0000 0.8590 0.9241   0.6970       52.5641
-   blosum  UNET   1.0000    1.0000 1.0000 1.0000   0.9941       97.4359
+   onehot   CNN   1.0000    1.0000 1.0000 1.0000   0.7240       48.7179
+   onehot  UNET   1.0000    1.0000 1.0000 1.0000   0.9838       98.7179
+   onehot  LSTM   1.0000    1.0000 1.0000 1.0000   0.9049       76.9231
+   blosum   CNN   1.0000    1.0000 1.0000 1.0000   0.7484       53.8462
+   blosum  UNET   1.0000    1.0000 1.0000 1.0000   0.9933       97.4359
+   blosum  LSTM   1.0000    1.0000 1.0000 1.0000   0.9977       98.7179
 esm2_650m   CNN   1.0000    1.0000 1.0000 1.0000   0.9982       98.7179
 esm2_650m  UNET   1.0000    1.0000 1.0000 1.0000   0.9982       98.7179
+esm2_650m  LSTM   1.0000    1.0000 1.0000 1.0000   0.9923       97.4359
 
-BEST MODEL: onehot + UNET (F1 = 1.0000, IoU = 0.9943)
+BEST MODEL: onehot + UNET (Exact Match % = 98.7179, F1 = 1.0000)

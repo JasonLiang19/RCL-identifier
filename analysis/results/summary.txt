@@ -1,0 +1,37 @@
+
+========================================
+RCL Prediction Results Summary
+(9 experiments completed)
+========================================
+
+ Encoding Model Accuracy Precision Recall     F1 F1-Macro    MCC    AUC
+   onehot   CNN   0.9961    0.9561 0.8709 0.9115   0.9548 0.9106 0.9766
+   onehot  LSTM   0.9898    0.7554 0.8201 0.7864   0.8906 0.7819 0.9871
+   onehot  UNET   0.9986    0.9714 0.9686 0.9700   0.9847 0.9693 0.9938
+   blosum   CNN   0.9963    0.9476 0.8876 0.9166   0.9574 0.9152 0.9784
+   blosum  LSTM   0.9984    0.9738 0.9537 0.9637   0.9814 0.9629 0.9938
+   blosum  UNET   0.9988    0.9690 0.9788 0.9739   0.9866 0.9733 0.9949
+esm2_650m   CNN   0.9988    0.9777 0.9681 0.9729   0.9861 0.9723 0.9976
+esm2_650m  LSTM   0.9989    0.9757 0.9753 0.9755   0.9875 0.9749 0.9980
+esm2_650m  UNET   0.9988    0.9748 0.9737 0.9742   0.9868 0.9736 0.9952
+
+Training Information:
+ Encoding Model  Best Epoch  Total Epochs
+   onehot   CNN           9            14
+   onehot  LSTM           4             9
+   onehot  UNET           9            14
+   blosum   CNN          17            22
+   blosum  LSTM          11            16
+   blosum  UNET          11            16
+esm2_650m   CNN           2             7
+esm2_650m  LSTM           9            14
+esm2_650m  UNET           4             9
+
+
+Best Performance (among completed experiments):
+  Encoding: esm2_650m
+  Model: LSTM
+  F1 Score: 0.9755
+  Accuracy: 0.9989
+  MCC: 0.9749
+

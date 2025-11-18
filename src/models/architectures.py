@@ -229,6 +229,7 @@ class UNetModel(nn.Module):
         Returns:
             Output tensor of shape (batch, max_length, num_classes)
         """
+
         # Transpose for Conv1d: (batch, channels, length)
         x = x.transpose(1, 2)
         

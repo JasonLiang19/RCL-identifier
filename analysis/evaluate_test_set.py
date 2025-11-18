@@ -48,10 +48,18 @@ def load_model_and_encoder(model_name, device):
         max_length = config['data']['max_length']
         encoder = ESM2_650M_Encoder(max_length=max_length, device=device)
     else:
-        raise ValueError(f"Unknown model type: {model_name}")
+        raise ValueError(f"Unknown encoding type: {model_name}")
     
     # Create model
-    model_type = 'cnn' if 'cnn' in model_name else 'unet'
+    if 'cnn' in model_name:
+        model_type = 'cnn'
+    elif 'unet' in model_name:
+        model_type = 'unet'
+    elif 'lstm' in model_name:
+        model_type = 'lstm'
+    else:
+        raise ValueError(f"Unknown model type: {model_name}")
+
     model = get_model(
         model_type,
         encoding_dim,

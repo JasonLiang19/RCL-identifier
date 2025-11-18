@@ -47,8 +47,28 @@ project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
 from src.data.encoders import BLOSUMEncoder, ESM2_650M_Encoder, EncodedDataset, OneHotEncoder
-from src.models.architectures import CNNModel, UNetModel
+from src.models.architectures import CNNModel, UNetModel, LSTMModel
 
+def get_latest_run_dir(base_dir: str) -> Path:
+    base_path = Path(base_dir)
+    if not base_path.exists():
+        raise FileNotFoundError(f"No run directory found at: {base_dir}")
+
+    run_dirs = [
+        d for d in base_path.iterdir()
+        if d.is_dir() and d.name.startswith("run_")
+    ]
+
+    if not run_dirs:
+        raise FileNotFoundError("No run directories found")
+
+    # Sort run directories numerically: run_001 < run_002 < run_010 < ...
+    run_dirs_sorted = sorted(
+        run_dirs,
+        key=lambda d: int(d.name.split("_")[1])
+    )
+
+    return run_dirs_sorted[-1]   # Most recent run directory
 
 def load_model_and_encoder(model_name, device):
     """Load trained model and corresponding encoder."""
@@ -73,6 +93,8 @@ def load_model_and_encoder(model_name, device):
         model_type = 'UNET'
     elif 'cnn' in model_name:
         model_type = 'CNN'
+    elif 'lstm' in model_name:
+        model_type = 'LSTM'
     else:
         model_type = config.get('model', 'CNN').upper()
     
@@ -87,7 +109,14 @@ def load_model_and_encoder(model_name, device):
         raise ValueError(f"Unknown encoding: {encoding}")
     
     # Initialize model
-    model_class = CNNModel if model_type == 'CNN' else UNetModel
+    if model_type == 'CNN':
+        model_class = CNNModel
+    elif model_type == 'UNET':
+        model_class = UNetModel
+    elif model_type == 'LSTM':
+        model_class = LSTMModel
+    else:
+        raise ValueError(f"Unknown MODEL")
     
     # Get embedding dimension from encoder
     if hasattr(encoder, 'embedding_dim'):
@@ -103,6 +132,7 @@ def load_model_and_encoder(model_name, device):
     )
     
     # Load weights
+    results_dir = get_latest_run_dir(results_dir)
     model_path = results_dir / 'best_model.pt'
     checkpoint = torch.load(model_path, map_location=device)
     
@@ -148,7 +178,7 @@ def load_data(dataset_type, data_dir):
         ids, labels, sequences, rcl_sequences = read_csv_with_annotations(csv_file)
     elif dataset_type == 'val':
         # Load validation split from training data
-        csv_file = data_dir / 'raw' / 'alphafold_rcl_annotations.csv'
+        csv_file = data_dir / 'raw' / 'Alphafold_RCL_annotations.csv'
         print(f"\nLoading validation set from {csv_file}")
         
         # Read all data
@@ -545,10 +575,13 @@ def main():
         models_to_eval = [
             'onehot_cnn',
             'onehot_unet',
+            'onehot_lstm',
             'blosum_cnn',
             'blosum_unet',
+            'blosum_lstm',
             'esm2_650m_cnn',
-            'esm2_650m_unet'
+            'esm2_650m_unet',
+            'esm2_650m_lstm'
         ]
     
     # Evaluate each model
@@ -602,18 +635,22 @@ def main():
         display_df = df[['encoding', 'model', 'accuracy', 'precision', 'recall', 'f1', 'f1_macro', 'mcc', 'auc']].copy()
         display_df.columns = ['Encoding', 'Model', 'Accuracy', 'Precision', 'Recall', 'F1', 'F1-Macro', 'MCC', 'AUC']
         
-        # Find best
-        best_idx = df['f1'].idxmax()
-        best = df.loc[best_idx]
+        # Find best by sorting by f1 first, then breaking ties with MCC
+        best = df.sort_values(
+            by=['f1', 'mcc'],
+            ascending=[False, False]
+        ).iloc[0]
     else:
         # Sequence-level table
         display_df = df[['encoding', 'model', 'binary_accuracy', 'binary_precision', 'binary_recall', 
                         'binary_f1', 'mean_iou', 'exact_match_pct']].copy()
         display_df.columns = ['Encoding', 'Model', 'Accuracy', 'Precision', 'Recall', 'F1', 'Mean IoU', 'Exact Match %']
         
-        # Find best
-        best_idx = df['binary_f1'].idxmax()
-        best = df.loc[best_idx]
+        # Find best by sorting by exact match first, then breaking ties with f1
+        best = df.sort_values(
+            by=['exact_match_pct', 'binary_f1'],
+            ascending=[False, False]
+        ).iloc[0]
     
     # Format and display
     for col in display_df.columns[2:]:
@@ -623,19 +660,24 @@ def main():
     print()
     
     if args.aa:
-        print(f"BEST MODEL: {best['encoding']} + {best['model']} (F1 = {best['f1']:.4f})")
+        print(f"BEST MODEL: {best['encoding']} + {best['model']} (F1 = {best['f1']:.4f}, MCC = {best['mcc']:.4f})")
     else:
-        print(f"BEST MODEL: {best['encoding']} + {best['model']} (F1 = {best['binary_f1']:.4f}, IoU = {best['mean_iou']:.4f})")
+        print(f"BEST MODEL: {best['encoding']} + {best['model']} (Exact Match % = {best['exact_match_pct']:.4f}, F1 = {best['binary_f1']:.4f})")
     print()
     
+    # include min_consecutive in filename
+    min_consecutive = ""
+    if args.min_consecutive != 1:
+        min_consecutive = f"min{args.min_consecutive}_"
+
     # Save results
     eval_type = 'residue_level' if args.aa else 'sequence_level'
-    output_file = results_dir / f'{args.dataset}_{eval_type}_evaluation.csv'
+    output_file = results_dir / f'{args.dataset}_{eval_type}_{min_consecutive}evaluation.csv'
     df.to_csv(output_file, index=False, float_format='%.4f')
     print(f"✓ Results saved to: {output_file}")
     
     # Save formatted summary
-    summary_file = results_dir / f'{args.dataset}_{eval_type}_evaluation.txt'
+    summary_file = results_dir / f'{args.dataset}_{eval_type}_{min_consecutive}evaluation.txt'
     with open(summary_file, 'w') as f:
         f.write("="*80 + "\n")
         f.write(f"{args.dataset.upper()} SET EVALUATION RESULTS\n")
@@ -646,9 +688,9 @@ def main():
         f.write(display_df.to_string(index=False) + "\n\n")
         
         if args.aa:
-            f.write(f"BEST MODEL: {best['encoding']} + {best['model']} (F1 = {best['f1']:.4f})\n")
+            f.write(f"BEST MODEL: {best['encoding']} + {best['model']} (F1 = {best['f1']:.4f}, MCC = {best['mcc']:.4f})\n")
         else:
-            f.write(f"BEST MODEL: {best['encoding']} + {best['model']} (F1 = {best['binary_f1']:.4f}, IoU = {best['mean_iou']:.4f})\n")
+            f.write(f"BEST MODEL: {best['encoding']} + {best['model']} (Exact Match % = {best['exact_match_pct']:.4f}, F1 = {best['binary_f1']:.4f})\n")
     
     print(f"✓ Summary saved to: {summary_file}")
     print("\n✓ Evaluation complete!")

@@ -18,7 +18,7 @@ mkdir -p ${RESULTS_DIR}
 
 # Arrays for encodings and models
 ENCODINGS=("onehot" "blosum" "esm2_650m")
-MODELS=("cnn" "unet")
+MODELS=("cnn" "unet" "lstm")
 
 echo "=========================================="
 echo "RCL Prediction Experiments"

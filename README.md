@@ -66,7 +66,7 @@ ls data/embeddings/esm2_650m_embeddings.npz
 
 ```bash
 # With pre-computed embeddings (recommended for ESM2)
-python src/train.py --encoding esm2_650m --model unet --precomputed --epochs 50
+python src/train.py --encoding esm2_650m --model unet --precomputed data/embeddings/esm2_650m_embeddings.npz --epochs 50
 
 # Without pre-computed embeddings (for smaller encodings)
 python src/train.py --encoding onehot --model cnn --epochs 50 --batch-size 32

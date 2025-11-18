@@ -64,3 +64,15 @@ tmp/
 temp/
 # workspace file
 rcl.code-workspace
+
+# models
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/blosum_cnn
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/blosum_lstm
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/blosum_unet
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/esm2_650m_cnn
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/esm2_650m_lstm
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/esm2_650m_unet
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/onehot_cnn
+/blue/zhou/jason.liang/RCL-identifier/analysis/results/onehot_lstm
+
+
